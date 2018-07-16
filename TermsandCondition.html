@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+ 
+  
+  <script src="quiz.js"></script>
+   <script
+  src="https://code.jquery.com/jquery-3.3.1.js"></script>
+  <style>
+
+
+   </style>
+
+</head>
+<body id="score" >
+<div id="rules">
+	<h1>Rules of the Quiz</h1>
+	<ol style="color:red">
+	<li>1. Only team entries are eligible.</li>
+<li>2.A team shall consist of max two persons
+<li>3.The decision of the quiz-master will be final and will not be subjected to any change.</li>
+<li>4.The participants shall not be allowed to  use mobile or other electronic instruments.</li>
+<li>5.The questions shall be in the form of multiple choice, True / False statement, Specific-answer question</li>
+</ol>
+
+<input type="button" class="btn btn-primary" id="button1" value="Start Quiz" onclick="return showQuiz()"/>
+</div>
+<div id="quest">Hello</div>
+
+<div id="showbutton">
+<input type="radio" name="radio" id="btn1"/><span id="span1" name="opt" style="margin-left:5px"></span><br/><br/>
+<input type="radio" name="radio" id="btn2"/><span id="span2" name="opt" style="margin-left:5px"></span><br/><br/>
+<input type="radio" name="radio" id="btn3"/><span id="span3" name="opt" style="margin-left:5px"></span><br/><br/>
+<input type="radio" name="radio" id="btn4"/><span id="span4" name="opt" style="margin-left:5px"></span><br/><br/>
+</div>
+
+<div style="margin-top:30px ; margin-left:50px" id="nav">
+
+  <input type="button" name="prev" id="prevs" class="btn btn-primary" value="Previous" onclick="prevQ()"/>
+  <input type="button" name="next" id="nxt" class="btn btn-primary" value="Next" onclick="nextQ()"/> 
+  <input type="button" name="submit" id="submit" class="btn btn-primary" value="Finish" onclick="calculateScore()"/>
+	
+</div>
+</body>
+</html>
